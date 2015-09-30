@@ -1,4 +1,6 @@
+
 <div class="container">
+    <button ng-if="token.admin == false" type="button" class="btn btn-default" ng-click="adminify()">Adminify!</button>
     <div class="row" ng-repeat="a in requests" id="queue">
       <h3>{{ a.name }} <small>@ {{ a.created }}</small></h3>
       <h4>{{ a.purpose }}</h4>

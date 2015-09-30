@@ -1,0 +1,5 @@
+<div class="container-fluid">
+  <alert ng-repeat="alert in alerts" type="{{alert.type}}">{{alert.msg}}</alert>
+  <input type="text" placeholder="Password..." ng-model="token.password"></input>
+  <button class="btn btn-primary" ng-click="get_admin()">Submit</button>
+</div>
